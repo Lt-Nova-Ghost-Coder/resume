@@ -4,8 +4,8 @@ import { Mail, Github, Linkedin, Phone } from "lucide-react";
 const contacts = [
   { icon: Mail, label: "Email", value: "ks.krishnasaini19@gmail.com", href: "mailto:ks.krishnasaini19@gmail.com" },
   { icon: Phone, label: "Phone", value: "+91-9310435419", href: "tel:+91-9310435419" },
-  { icon: Github, label: "GitHub", value: "https://github.com/Lt-Nova-Ghost-Coder", href: "https://github.com/Lt-Nova-Ghost-Coder" },
-  { icon: Linkedin, label: "LinkedIn(to be added)", value: "https://linkedin.com/in/yourusername", href: "https://linkedin.com/in/yourusername" },
+  { icon: Github, label: "GitHub", value: "Click Here", href: "https://github.com/Lt-Nova-Ghost-Coder" },
+  { icon: Linkedin, label: "LinkedIn", value: "Click Here", href: "https://www.linkedin.com/in/krishna-saini-04a309304/" },
 ];
 
 const ContactSection = () => {  

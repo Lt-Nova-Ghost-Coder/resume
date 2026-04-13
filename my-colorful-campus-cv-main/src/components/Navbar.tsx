@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { label: "About", href: "#about" },
@@ -11,6 +12,7 @@ const links = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -27,10 +29,20 @@ const Navbar = () => {
         scrolled ? "bg-background/80 backdrop-blur-xl border-b border-border/50" : ""
       }`}
     >
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         <a href="#" className="font-display text-lg font-bold text-gradient">
           YN
         </a>
+
+        <button
+          type="button"
+          className="inline-flex items-center justify-center rounded-full border border-border/60 bg-background/80 p-2 text-muted-foreground transition-colors hover:text-foreground md:hidden"
+          onClick={() => setMenuOpen((state) => !state)}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        >
+          {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
+
         <div className="hidden md:flex gap-6">
           {links.map(({ label, href }) => (
             <a
@@ -43,6 +55,27 @@ const Navbar = () => {
           ))}
         </div>
       </div>
+
+      {menuOpen && (
+        <div className="md:hidden">
+          <div className="container mx-auto px-4 pb-4">
+            <div className="glass-card rounded-3xl border border-border/50 bg-background/95 backdrop-blur-xl p-4 shadow-xl">
+              <div className="flex flex-col gap-3">
+                {links.map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    onClick={() => setMenuOpen(false)}
+                    className="rounded-xl px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary/40 transition-colors"
+                  >
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </motion.nav>
   );
 };
