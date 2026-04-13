@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="text-gradient">Saini</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body leading-relaxed">
-            Aspiring Software Developer · Computer Science Student · Building the future, one line of code at a time.
+            Aspiring Software Developer · Computer Science Student · Building something meaningful, one line of code at a time.
           </p>
         </motion.div>
 
@@ -50,12 +50,12 @@ const HeroSection = () => {
             <Github className="w-4 h-4" /> GitHub
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/krishna-saini-04a309304/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:bg-secondary transition-colors"
           >
-            <Linkedin className="w-4 h-4" /> LinkedIn
+            <Linkedin className="w-4 h-4" /> LinkedIn (to be added)
           </a>
         </motion.div>
 

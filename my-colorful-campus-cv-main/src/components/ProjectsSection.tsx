@@ -3,23 +3,23 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A personal portfolio website built with React and Tailwind CSS to showcase my work and skills.",
-    tech: ["React", "Tailwind CSS", "TypeScript"],
-    github: "https://github.com",
+    title: "College ERP System",
+    description: "A full-stack University ERP System implementing secure role-based access, academic workflows, grading automation, and system-wide maintenance enforcement.",
+    tech: ["Java", "Swing", "MySQL"],
+    github: "https://github.com/Lt-Nova-Ghost-Coder/Erp_2025",
     live: "#",
   },
   {
-    title: "Todo App",
-    description: "A full-featured task management app with local storage persistence and drag-and-drop reordering.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com",
+    title: "Simple Scheduler",
+    description: "This project implements a SimpleScheduler in C that works with a SimpleShell. It allows users to submit executable programs, manages a ready queue, schedules processes in a round-robin fashion based on a fixed time quantum (TSLICE), and prints job execution summaries upon termination.",
+    tech: ["C", "Operating Systems"],
+    github: "https://github.com/Lt-Nova-Ghost-Coder/simple-unix-scheduler",
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather data visualization using a public API with search and favorites functionality.",
-    tech: ["Python", "API", "Flask"],
-    github: "https://github.com",
+    title: "Simple Shell",
+    description: "A shell is a program that allows users to interact with the operating system by typing commands. Instead of using an existing shell like bash, this project builds a basic shell from scratch to understand how commands are executed internally.",
+    tech: ["C", "Operating Systems"],
+    github: "https://github.com/Lt-Nova-Ghost-Coder/simple-unix-shell",
   },
 ];
 
