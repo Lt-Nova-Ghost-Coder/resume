@@ -55,7 +55,7 @@ const HeroSection = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:bg-secondary transition-colors"
           >
-            <Linkedin className="w-4 h-4" /> LinkedIn (to be added)
+            <Linkedin className="w-4 h-4" /> LinkedIn
           </a>
         </motion.div>
 

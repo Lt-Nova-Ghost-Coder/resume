@@ -11,7 +11,7 @@ const skillCategories = [
   },
   {
     title: "Concepts",
-    skills: ["DSA", "OOP", "DBMS", "OS", "Networking"],
+    skills: ["DSA", "OOP", "DBMS", "OS", "Networking", "Enteupreneurship"],
   },
 ];
 

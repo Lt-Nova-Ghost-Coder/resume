@@ -1,29 +1,49 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
     title: "College ERP System",
-    description: "A full-stack University ERP System implementing secure role-based access, academic workflows, grading automation, and system-wide maintenance enforcement.",
+    description: "Full-stack university ERP with role-based access, academic workflows, automated grading, and system maintenance.",
     tech: ["Java", "Swing", "MySQL"],
+    category: "Web",
     github: "https://github.com/Lt-Nova-Ghost-Coder/Erp_2025",
     live: "#",
   },
   {
     title: "Simple Scheduler",
-    description: "This project implements a SimpleScheduler in C that works with a SimpleShell. It allows users to submit executable programs, manages a ready queue, schedules processes in a round-robin fashion based on a fixed time quantum (TSLICE), and prints job execution summaries upon termination.",
+    description: "C-based scheduler integrated with a shell, supporting program execution, ready queue management, and round-robin scheduling with fixed time slices.",
     tech: ["C", "Operating Systems"],
+    category: "System/OS",
     github: "https://github.com/Lt-Nova-Ghost-Coder/simple-unix-scheduler",
   },
   {
     title: "Simple Shell",
-    description: "A shell is a program that allows users to interact with the operating system by typing commands. Instead of using an existing shell like bash, this project builds a basic shell from scratch to understand how commands are executed internally.",
+    description: "Custom-built shell in C that executes user commands, demonstrating how operating systems handle command execution internally.",
     tech: ["C", "Operating Systems"],
+    category: "System/OS",
     github: "https://github.com/Lt-Nova-Ghost-Coder/simple-unix-shell",
+  },
+  {
+    title: "Live Resume website",
+    description: "A responsive website for displaying a professional resume with modern design and smooth animations.",
+    tech: ["React", "TypeScript", "HTML", "CSS"],
+    category: "Web",
+    github: "https://github.com/Lt-Nova-Ghost-Coder/resume",
+    live: "https://krishnasainiresume.vercel.app/",
   },
 ];
 
+const filters = ["All", "System/OS", "Web", "AI"];
+
 const ProjectsSection = () => {
+  const [selectedFilter, setSelectedFilter] = useState("All");
+
+  const filteredProjects = selectedFilter === "All" 
+    ? projects 
+    : projects.filter(project => project.category === selectedFilter);
+
   return (
     <section id="projects" className="py-24 px-6 bg-secondary/30">
       <div className="container mx-auto max-w-4xl">
@@ -38,8 +58,25 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-16 h-1 bg-primary rounded-full mb-8" />
 
+          {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            {filters.map((filter) => (
+              <button
+                key={filter}
+                onClick={() => setSelectedFilter(filter)}
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  selectedFilter === filter
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-secondary text-foreground hover:bg-secondary/80"
+                }`}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((project, i) => (
+            {filteredProjects.map((project, i) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}

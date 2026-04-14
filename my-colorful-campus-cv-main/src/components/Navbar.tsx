@@ -6,6 +6,7 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -31,7 +32,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         <a href="#" className="font-display text-lg font-bold text-gradient">
-          YN
+          KS
         </a>
 
         <button
