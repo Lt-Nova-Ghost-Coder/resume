@@ -4,6 +4,14 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "Full Stack Gym and Sports System",
+    description: "Full-stack web application using Next.js, MySQL, and TypeScript for gym access and equipment lending, featuring secure authentication, role-based dashboards, inventory/loan management, and REST API integration. ",
+    tech: ["JavaScript", "Node.js", "React", "MySQL"],
+    category: "Web",
+    github: "https://github.com/Lt-Nova-Ghost-Coder/DBMS_SEMESTER_PROJECT",
+    live: "#",
+  },
+  {
     title: "College ERP System",
     description: "Full-stack university ERP with role-based access, academic workflows, automated grading, and system maintenance.",
     tech: ["Java", "Swing", "MySQL"],
