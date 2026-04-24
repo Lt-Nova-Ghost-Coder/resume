@@ -3,6 +3,17 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+    role: "Open Source Contributor",
+    company: "Nexus Spring of Code 2026",
+    period: "April 2026 - Present",
+    location: "New Delhi, India",
+    description: [
+      "Contributing to open-source projects through collaborative development, issue resolution, and feature implementation.",
+      "Working with mentors and maintainers on real-world codebases using version control and team workflows.",
+      "Gaining experience in code reviews, debugging, and community-driven software development."
+    ]
+  },
+  {
     role: "Python Developer Intern",
     company: "Mind Aviator Groups",
     period: "May 2025 - Jun 2025",
