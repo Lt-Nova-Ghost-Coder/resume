@@ -41,6 +41,13 @@ const projects = [
     github: "https://github.com/Lt-Nova-Ghost-Coder/resume",
     live: "https://krishnasainiresume.vercel.app/",
   },
+  {
+    title: "Veritas - AI Video Detection",
+    description: "Full-stack AI tool for deepfake video detection with frame-based analysis, visual dashboard, and downloadable forensic reports.",
+    tech: ["React", "TypeScript", "FastAPI", "OpenCV", "PyTorch"],
+    category: "AI",
+    github: "https://github.com/Lt-Nova-Ghost-Coder/AI-Video-Detection-tool",
+  },
 ];
 
 const filters = ["All", "System/OS", "Web", "AI"];
