@@ -47,6 +47,7 @@ const projects = [
     tech: ["React", "TypeScript", "FastAPI", "OpenCV", "PyTorch"],
     category: "AI",
     github: "https://github.com/Lt-Nova-Ghost-Coder/AI-Video-Detection-tool",
+    live: "https://ai-video-detection-tool.vercel.app/"
   },
 ];
 
