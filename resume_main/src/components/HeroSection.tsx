@@ -25,7 +25,7 @@ const HeroSection = () => {
             <span className="text-gradient">Saini</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body leading-relaxed">
-            Aspiring Software Developer · Computer Science Student · Building something meaningful, one line of code at a time.
+            Computer Science Student · Software Engineer · Building something meaningful, one line of code at a time.
           </p>
         </motion.div>
 
