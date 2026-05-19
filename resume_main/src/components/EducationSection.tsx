@@ -6,12 +6,12 @@ const education = [
     degree: "B.Tech in Computer Science and Engineering",
     institution: "Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)",
     year: "2024 – 2028 (Expected)",
-    details: "Relevant Coursework: Data Structures, Algorithms, OOP, DBMS, Web Development",
+    details: "Relevant Coursework: Data Structures, Algorithms, OOP, DBMS, Entrepreneurship",
   },
   {
     degree: "Higher Secondary (12th Grade)",
     institution: "Dev Samaj Modern School, New Delhi",
-    year: "2022 – 2024",
+    year: "2023 – 2024",
     details: "Science Stream (PCM/CS)",
   },
 ];
