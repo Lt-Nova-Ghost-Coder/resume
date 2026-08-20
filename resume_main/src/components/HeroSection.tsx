@@ -18,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-4">
-            Second Year Student
+            Third Year Student
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
             <span className="text-foreground">Krishna</span>{" "}
